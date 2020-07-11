@@ -12,4 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
   c.width = w;
   c.height = h;
   document.body.appendChild(c);
+  setTimeout(function () {
+    window.scrollTo(0, document.body.scrollHeight);
+    document.body.style.overflowY = 'hidden';
+    console.log('done');
+  }, 100);
 });
