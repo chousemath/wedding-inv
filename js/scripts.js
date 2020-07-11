@@ -3,7 +3,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('.splide', {
     type: 'loop',
-    pagination: false
+    pagination: false,
+    height: '100vh'
   }).mount();
   var c = document.createElement('canvas');
   var ctx = c.getContext('2d');
@@ -13,8 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
   c.height = h;
   document.body.appendChild(c);
   setTimeout(function () {
-    window.scrollTo(0, document.body.scrollHeight);
-    document.body.style.overflowY = 'hidden';
+    //window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo(0, 200);
+    document.body.style.overflow = 'hidden';
     console.log('done');
   }, 100);
 });

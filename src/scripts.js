@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     new Splide('.splide', {
         type: 'loop',
         pagination: false,
+        height: '100vh',
     }).mount();
 
     const c = document.createElement('canvas');
@@ -12,8 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
     c.height = h;
     document.body.appendChild(c);
     setTimeout(() => {
-        window.scrollTo(0, document.body.scrollHeight);
-        document.body.style.overflowY = 'hidden';
+        //window.scrollTo(0, document.body.scrollHeight);
+        window.scrollTo(0, 200);
+        document.body.style.overflow = 'hidden';
         console.log('done');
     }, 100);
 });

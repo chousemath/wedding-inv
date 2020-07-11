@@ -9,26 +9,20 @@
 }
 body {
     width: 100%;
-    height: calc(100vh + 100px);
-    overflow-y: scroll;
+    height: calc(100vh + 400px);
+    overflow: scroll;
 }
 canvas {
     width: 100vw;
     height: 100vh;
     position: fixed;
     left: 0;
-    top: 100px;
+    top: 200px;
     pointer-events: none;
-    overflow-y: hidden;
-}
-#main {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 .slide-container {
     width: 100vw;
     height: 100vh;
-    margin-top: 100px;
-    overflow-y: hidden;
+    overflow: hidden;
 }
