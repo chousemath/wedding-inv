@@ -17,5 +17,5 @@ setTimeout(() => {
     //window.scrollTo(0, document.body.scrollHeight);
     window.scrollTo(0, 1000);
     //document.body.style.overflow = 'hidden';
-    console.log('v0.0.1');
+    console.log('v0.0.2');
 }, 1);
