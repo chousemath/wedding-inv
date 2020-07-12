@@ -15,6 +15,6 @@
 //});
 setTimeout(() => {
     //window.scrollTo(0, document.body.scrollHeight);
-    window.scrollTo(0, 1);
+    window.scrollTo(0, 1000);
     //document.body.style.overflow = 'hidden';
 }, 1);
