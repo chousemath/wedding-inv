@@ -9,20 +9,15 @@
 }
 body {
     width: 100%;
-    height: calc(100vh + 400px);
-    overflow: scroll;
+    height: calc(100vh + 1px);
 }
 canvas {
-    width: 100vw;
-    height: 100vh;
     position: fixed;
     left: 0;
-    top: 200px;
+    top: 1px;
     pointer-events: none;
-    overflow: hidden;
 }
 .slide-container {
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
 }
