@@ -17,6 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     //window.scrollTo(0, document.body.scrollHeight);
     window.scrollTo(0, 1); //document.body.style.overflow = 'hidden';
 
-    console.log('done');
-  }, 100);
+    alert('done');
+  }, 1000);
 });
