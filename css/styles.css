@@ -55,6 +55,12 @@ body {
     left: -16px;
     box-shadow: 0px 3px 8px 3px rgba(109,90,56,0.5);
 }
+#cover-canvas {
+    width: 100vw;
+    height: calc(100vw * 250 / 375);
+    position: absolute;
+    left: -16px;
+}
 #intro-btm {
     display: flex;
     justify-content: center;
@@ -96,12 +102,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-canvas {
-    position: fixed;
-    left: 0;
-    top: 1px;
-    pointer-events: none;
-}
 #date-img {
     width: 100%;
     height: auto;
@@ -110,6 +110,7 @@ canvas {
     width: calc(100% - 32px);
     height: auto;
 }
+
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
     .cover-photo {
