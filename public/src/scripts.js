@@ -8,6 +8,20 @@
 //ctxCover.fillStyle = 'red';
 //ctxCover.fill();
 
-addEventListener('load', function() {
+$(document).ready(function(){
     window.scrollTo(1, 0);
-}, false);
+    $('.your-class').slick({
+        infinite: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        centerMode: true,
+        prevArrow: false,
+        nextArrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        variableHeight: true,
+    });
+});
