@@ -458,11 +458,40 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: silver;
+    display: flex;
+    flex-direction: column;
+}
+#section-instructions-text {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section-instructions-box {
+    width: calc(100% - 2 * 22.5px);
 }
 #section-thanks {
     width: 100vw;
     height: 100vh;
-    background-color: gold;
+}
+.section-instructions-title {
+    font-size: 22.5px;
+    line-height: 100px;
+    font-family: GoldenPier;
+}
+.section-instructions-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-instructions-innermost {
+    width: calc(100% - 2 * 12.5px);
+}
+.instructions {
+    font-size: 16px;
+    line-height: 25px;
+    font-family: GoldenPier;
 }
 @media all and (min-height: 800px) and (max-height: 9024px) {
 }
