@@ -1,3 +1,5 @@
+"use strict";
+
 //const coverCanvas = document.getElementById('cover-canvas');
 //const ctxCover = coverCanvas.getContext('2d');
 //
@@ -7,4 +9,6 @@
 //ctxCover.stroke();
 //ctxCover.fillStyle = 'red';
 //ctxCover.fill();
-"use strict";
+addEventListener("load", function () {
+  window.scrollTo(1, 0);
+}, false);

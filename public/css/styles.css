@@ -1,4 +1,5 @@
 @font-face { font-family: GoldenPier; src: url(MapoGoldenPier.ttf); }
+@font-face { font-family: FlowerIsland; src: url(MapoFlowerIsland.ttf); }
 @font-face { font-family: Palatino; src: url(Palatino.ttf); }
 * {
     margin: 0;
@@ -11,23 +12,48 @@
 }
 body {
     background-color: transparent;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-grow {
+    display: flex;
+    flex-grow: 1;
+}
+.intro-btm-text-top {
+    font-size: 16px;
+    color: #f1cb9c;
+    font-family: FlowerIsland;
+    letter-spacing: 0.03px;
+}
+.intro-btm-text-btm {
+    font-size: 27px;
+    color: #f1cb9c;
+    font-family: GoldenPier;
 }
 #main-container {
-    overflow: scroll;
+    /*
     height: 100vh;
     width: 100vw;
+    overflow: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    */
 }
 .child {
+    /*
     scroll-snap-align: start;
+    */
 }
 #section-intro {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh * 735 / 788);
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -35,8 +61,8 @@ body {
     font-family: GoldenPier;
 }
 #section-intro-internal {
-    width: calc(100vw - 32px);
-    height: calc(100vh - 32px);
+    width: calc(100vw - 23px);
+    height: calc(100vh * 735 / 788 - 23px);
     display: flex;
     flex-direction: column;
     background-color: #fffaf3;
@@ -44,27 +70,39 @@ body {
 #intro-top {
     display: flex;
     width: 100%;
-    height: 160pt;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    /*
+    background-color: #fffaf3;
+    */
     background-color: #fffaf3;
 }
 #intro-mid {
     display: flex;
-    width: 100%;
+    /*
     height: calc(100vw * 250 / 375);
-    margin-top: 15px;
+    */
     justify-content: center;
     align-items: center;
-    background-color: #fffaf3;
+    /*
+    background-color: orange;
+    */
+}
+#cover-photo-container {
+    width: 100vw;
+    height: calc(100vw * 251.3 / 374.6);
     position: relative;
 }
 #cover-photo {
     width: 100vw;
-    height: calc(100vw * 250 / 375);
-    position: absolute;
+    height: auto;
+    /*
     left: -16px;
+    */
     box-shadow: 0px 3px 8px 3px rgba(109,90,56,0.5);
+    position: absolute;
+    left: -12px;
+    top: 0;
 }
 #cover-canvas {
     width: 100vw;
@@ -75,28 +113,55 @@ body {
 #intro-btm {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
+    /*
     background-color: #fffaf3;
-    padding-top: 120px;
+    */
 }
 #intro-btm-last {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    /*
     background-color: #fffaf3;
-    margin-top: 40px;
+    */
+}
+#spacer-1 {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    max-height: 44.8px;
+}
+#spacer-2 {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    max-height: 60.1px;
+}
+#spacer-3 {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    max-height: 57.7px;
+}
+#spacer-4 {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    max-height: 21.7px;
 }
 #intro-btm-line {
-    margin-top: -16px;
-    width: 60px;
+    width: 65px;
     height: 2px;
     background-color: #f1cb9c;
 }
 #intro-tag {
     width: 45%;
-    max-width: 143px;
+    /*
+    background-color: #fffaf3;
+    */
     background-color: #fffaf3;
     display: flex;
     flex-direction: column;
@@ -105,20 +170,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-#intro-tag-top {
-    width: 100%;
-    height: 65%;
-    background-color: #f1cb9c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #date-img {
-    width: 100%;
+    /*
+    height: calc(100vh * 113.2 / 788);
+    width: auto;
+    */
+    width: calc(100% * 100 / 352);
     height: auto;
 }
 #text-img {
-    width: calc(100% - 32px);
+    width: calc(100% * 287 / 352);
     height: auto;
 }
 .sparkle {
@@ -164,195 +225,83 @@ body {
     background-color: transparent;
     text-align: center;
     font-size: 17px;
+    font-family: FlowerIsland;
+    position: absolute;
+    left: 0;
+    color: #1c4235;
+}
+.welcome-text2 {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 19px;
     font-family: GoldenPier;
     position: absolute;
     left: 0;
-    color: #36522D;
+    color: #1c4235;
 }
 #welcome-btm-line {
-    width: 60px;
+    width: 65px;
     height: 2px;
     background-color: #f1cb9c;
 }
+#welcome-text-0 {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    height: 34px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-text-1 { top: 205px; }
+#welcome-text-2 { top: calc(205px + 2 * 17px); }
+#welcome-text-3 { top: calc(205px + 4 * 17px); }
+#welcome-text-4 { top: calc(205px + 6 * 17px); }
+#welcome-text-5 { top: calc(205px + 8 * 17px); }
+#welcome-text-6 { top: calc(205px + 10 * 17px); }
+#welcome-text-7 { top: calc(205px + 12 * 17px); }
+#welcome-line-container {
+    position: absolute;
+    left: 0;
+    top: calc(205px + 16 * 17px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-text-8 {
+    top: calc(205px + 20 * 17px);
+    display: flex;
+    flex-direction: row;
+}
+.welcome-text-8-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18.9px;
+}
+.welcome-text-8-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18.2px;
+}
+#welcome-text-9 {
+    top: calc(205px + 19px + 21 * 17px);
+    display: flex;
+    flex-direction: row;
+}
 
 @media all and (min-height: 800px) and (max-height: 9024px) {
-	.cover-photo { top: 50px; }
-    .welcome-text2 {
-        color: #36522D;
-        width: 100%;
-        background-color: transparent;
-        text-align: center;
-        font-size: 21px;
-        font-family: GoldenPier;
-        position: absolute;
-        left: 0;
-    }
-    #welcome-text-0 {
-        position: absolute;
-        left: 0;
-        top: 89.38px;
-        height: 34px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #welcome-text-1 { top: 183.92px; }
-    #welcome-text-2 { top: 233.92px; }
-    #welcome-text-3 { top: 283.92px; }
-    #welcome-text-4 { top: 333.92px; }
-    #welcome-text-5 { top: 383.92px; }
-    #welcome-text-6 { top: 433.92px; }
-    #welcome-text-7 { top: 483.92px; }
-    #welcome-text-8 { top: 623.92px; }
-    #welcome-text-9 { top: 673.92px; }
-    #welcome-line-container {
-        position: absolute;
-        left: 0;
-        top: 573.92px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 @media all and (min-height: 650px) and (max-height: 800px) {
-    .welcome-text2 {
-        color: #36522D;
-        width: 100%;
-        background-color: transparent;
-        text-align: center;
-        font-size: 21px;
-        font-family: GoldenPier;
-        position: absolute;
-        left: 0;
-    }
-	.cover-photo { top: 10px; }
-    #welcome-text-0 {
-        position: absolute;
-        left: 0;
-        top: 59.38px;
-        height: 34px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #welcome-text-1 { top: 143.92px; }
-    #welcome-text-2 { top: 193.92px; }
-    #welcome-text-3 { top: 243.92px; }
-    #welcome-text-4 { top: 293.92px; }
-    #welcome-text-5 { top: 343.92px; }
-    #welcome-text-6 { top: 393.92px; }
-    #welcome-text-7 { top: 443.92px; }
-    #welcome-text-8 { top: 553.92px; }
-    #welcome-text-9 { top: 603.92px; }
-    #welcome-line-container {
-        position: absolute;
-        left: 0;
-        top: 503.92px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 @media all and (min-height: 600px) and (max-height: 650px) {
-    .welcome-text2 {
-        color: #36522D;
-        width: 100%;
-        background-color: transparent;
-        text-align: center;
-        font-size: 19px;
-        font-family: GoldenPier;
-        position: absolute;
-        left: 0;
-    }
-	.cover-photo { top: 0px; }
-    #welcome-text-0 {
-        position: absolute;
-        left: 0;
-        top: 39.38px;
-        height: 34px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #welcome-text-1 { top: 103.92px; }
-    #welcome-text-2 { top: 153.92px; }
-    #welcome-text-3 { top: 203.92px; }
-    #welcome-text-4 { top: 253.92px; }
-    #welcome-text-5 { top: 303.92px; }
-    #welcome-text-6 { top: 353.92px; }
-    #welcome-text-7 { top: 403.92px; }
-    #welcome-text-8 { top: 523.92px; }
-    #welcome-text-9 { top: 573.92px; }
-    #welcome-line-container {
-        position: absolute;
-        left: 0;
-        top: 473.92px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
-
 @media all and (max-height: 600px) {
-    .welcome-text2 {
-        color: #36522D;
-        width: 100%;
-        background-color: transparent;
-        text-align: center;
-        font-size: 19px;
-        font-family: GoldenPier;
-        position: absolute;
-        left: 0;
-    }
-	.cover-photo { top: 0px; }
-    #welcome-text-0 {
-        position: absolute;
-        left: 0;
-        top: 29.38px;
-        height: 34px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #welcome-text-1 { top: 93.92px; }
-    #welcome-text-2 { top: 133.92px; }
-    #welcome-text-3 { top: 173.92px; }
-    #welcome-text-4 { top: 213.92px; }
-    #welcome-text-5 { top: 253.92px; }
-    #welcome-text-6 { top: 293.92px; }
-    #welcome-text-7 { top: 333.92px; }
-    #welcome-text-8 { top: 453.92px; }
-    #welcome-text-9 { top: 503.92px; }
-    #welcome-line-container {
-        position: absolute;
-        left: 0;
-        top: 403.92px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
-
-
-@media all and (max-height: 600px) {
-    .welcome-text2 {
-        color: #36522D;
-        width: 100%;
-        background-color: transparent;
-        text-align: center;
-        font-size: 19px;
-        font-family: GoldenPier;
-        position: absolute;
-        left: 0;
-    }
 
 @-webkit-keyframes fadeinout { 50% { opacity: 1; } }
 @keyframes fadeinout { 50% { opacity: 1; } }

@@ -8,4 +8,6 @@
 //ctxCover.fillStyle = 'red';
 //ctxCover.fill();
 
-
+addEventListener('load', function() {
+    window.scrollTo(1, 0);
+}, false);

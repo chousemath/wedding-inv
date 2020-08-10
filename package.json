@@ -4,7 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "build": "babel src -d js"
+        "build": "babel public/src -d public/js"
     },
     "dependencies": {
         "@babel/cli": "^7.10.4",
