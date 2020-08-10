@@ -210,9 +210,18 @@ body {
     height: calc(100vh - 6 * 36.2px);
     background-color: #fffaf3;
 }
+.section-image-container {
+    overflow: hidden;
+    width: 100vw;
+    height: calc(100vh - 6 * 36.2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .your-class {
     width: 100%;
     height: calc(100vh - 6 * 36.2px);
+    background-color: #fffaf3;
 }
 .slick-track {
     display: flex !important;
@@ -335,7 +344,44 @@ body {
     height: 100px;
     width: 100vw;
 }
-
+#section-map {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+.section-map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section-map-title {
+    width: 100%;
+    height: auto;
+}
+#section-map-box {
+    flex-grow: 1;
+    background-color: blue;
+}
+#section-map-icon-container {
+    width: 100vw;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f1cb9c;
+}
+.section-map-icon-box {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.map-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
 @media all and (min-height: 800px) and (max-height: 9024px) {
 }
 @media all and (min-height: 650px) and (max-height: 800px) {
