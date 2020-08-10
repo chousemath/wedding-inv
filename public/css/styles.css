@@ -1,6 +1,15 @@
-@font-face { font-family: GoldenPier; src: url(MapoGoldenPier.ttf); }
-@font-face { font-family: FlowerIsland; src: url(MapoFlowerIsland.ttf); }
-@font-face { font-family: Palatino; src: url(Palatino.ttf); }
+@font-face {
+    font-family: GoldenPier;
+    src: url(MapoGoldenPier.ttf);
+}
+@font-face {
+    font-family: FlowerIsland;
+    src: url(MapoFlowerIsland.ttf);
+}
+@font-face {
+    font-family: Palatino;
+    src: url(Palatino.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -99,7 +108,7 @@ body {
     /*
     left: -16px;
     */
-    box-shadow: 0px 3px 8px 3px rgba(109,90,56,0.5);
+    box-shadow: 0px 3px 8px 3px rgba(109, 90, 56, 0.5);
     position: absolute;
     left: -12px;
     top: 0;
@@ -229,7 +238,9 @@ body {
 .slick-slide {
     height: inherit !important;
 }
-.slick-slide > div { height: 100%; }
+.slick-slide > div {
+    height: 100%;
+}
 #gallery-text {
     width: 215px;
     height: auto;
@@ -300,13 +311,27 @@ body {
     justify-content: center;
     align-items: center;
 }
-#welcome-text-1 { top: 205px; }
-#welcome-text-2 { top: calc(205px + 2 * 17px); }
-#welcome-text-3 { top: calc(205px + 4 * 17px); }
-#welcome-text-4 { top: calc(205px + 6 * 17px); }
-#welcome-text-5 { top: calc(205px + 8 * 17px); }
-#welcome-text-6 { top: calc(205px + 10 * 17px); }
-#welcome-text-7 { top: calc(205px + 12 * 17px); }
+#welcome-text-1 {
+    top: 205px;
+}
+#welcome-text-2 {
+    top: calc(205px + 2 * 17px);
+}
+#welcome-text-3 {
+    top: calc(205px + 4 * 17px);
+}
+#welcome-text-4 {
+    top: calc(205px + 6 * 17px);
+}
+#welcome-text-5 {
+    top: calc(205px + 8 * 17px);
+}
+#welcome-text-6 {
+    top: calc(205px + 10 * 17px);
+}
+#welcome-text-7 {
+    top: calc(205px + 12 * 17px);
+}
 #welcome-line-container {
     position: absolute;
     left: 0;
@@ -365,21 +390,26 @@ body {
     background-color: blue;
 }
 #section-map-icon-container {
-    width: 100vw;
+    width: calc(100vw - 24.6px);
     display: flex;
     flex-direction: row;
     background-color: #f1cb9c;
 }
 .section-map-icon-box {
     display: flex;
-    flex: 1;
+    width: calc((100% - 3 * 21.8px) / 3);
     justify-content: center;
     align-items: center;
 }
 .map-icon {
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
+}
+.map-icon-spacer {
+    display: flex;
+    width: 21.8px;
+    height: 50px;
 }
 #section-map-text-1 {
     color: #111210;
@@ -433,5 +463,13 @@ body {
 @media all and (max-height: 600px) {
 }
 
-@-webkit-keyframes fadeinout { 50% { opacity: 1; } }
-@keyframes fadeinout { 50% { opacity: 1; } }
+@-webkit-keyframes fadeinout {
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes fadeinout {
+    50% {
+        opacity: 1;
+    }
+}

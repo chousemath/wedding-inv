@@ -8,7 +8,7 @@
 //ctxCover.fillStyle = 'red';
 //ctxCover.fill();
 
-$(document).ready(function(){
+$(document).ready(function () {
     window.scrollTo(1, 0);
     $('.your-class').slick({
         infinite: true,
