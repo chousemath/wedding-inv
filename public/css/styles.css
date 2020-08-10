@@ -387,13 +387,13 @@ body {
 }
 #section-map-box {
     flex-grow: 1;
-    background-color: blue;
+    background-color: #fffaf3;
 }
 #section-map-icon-container {
     width: calc(100vw - 24.6px);
     display: flex;
     flex-direction: row;
-    background-color: #f1cb9c;
+    background-color: #fffaf3;
 }
 .section-map-icon-box {
     display: flex;
@@ -453,6 +453,16 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding-right: 12.4px;
+}
+#section-instructions {
+    width: 100vw;
+    height: 100vh;
+    background-color: silver;
+}
+#section-thanks {
+    width: 100vw;
+    height: 100vh;
+    background-color: gold;
 }
 @media all and (min-height: 800px) and (max-height: 9024px) {
 }
