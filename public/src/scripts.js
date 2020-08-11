@@ -24,7 +24,10 @@ $(document).ready(function () {
         variableWidth: true,
         variableHeight: true,
     });
-    //const mapBox = document.getElementById('section-map-box').getBoundingClientRect();
+    const mapBox = document.getElementById('section-map-box').getBoundingClientRect();
+    for (let x of document.getElementsByClassName('map')) {
+        x.height = mapBox.height.toString();
+    }
 });
 function copyAddress() {
   const copyText = document.getElementById('myInput');
