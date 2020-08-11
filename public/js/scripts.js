@@ -24,14 +24,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     variableWidth: true,
     variableHeight: true
-  });
-  var mapBox = document.getElementById('section-map-box').getBoundingClientRect();
-  new daum.roughmap.Lander({
-    'timestamp': '1597127240358',
-    'key': '2zmnf',
-    'mapWidth': mapBox.width.toString(),
-    'mapHeight': mapBox.height.toString()
-  }).render();
+  }); //const mapBox = document.getElementById('section-map-box').getBoundingClientRect();
 });
 
 function copyAddress() {
