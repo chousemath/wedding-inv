@@ -18,6 +18,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    overflow-x: hidden;
 }
 body {
     background-color: transparent;
