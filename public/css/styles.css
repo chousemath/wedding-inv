@@ -161,6 +161,10 @@ body {
     flex-grow: 1;
     max-height: 21.7px;
 }
+.spacer-grow {
+    display: flex;
+    flex-grow: 1;
+}
 .intro-btm-line {
     width: 65px;
     height: 2px;
@@ -492,6 +496,20 @@ body {
     font-size: 16px;
     line-height: 25px;
     font-family: GoldenPier;
+}
+#thanks-title {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+#thanks-title-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: FlowerIsland;
+    font-size: 28px;
+    line-height: 33px;
+    color: #1c4235;
 }
 @media all and (min-height: 800px) and (max-height: 9024px) {
 }
