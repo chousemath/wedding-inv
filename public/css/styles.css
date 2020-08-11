@@ -393,6 +393,9 @@ body {
 #section-map-box {
     flex-grow: 1;
     background-color: #fffaf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #section-map-icon-container {
     width: calc(100vw - 24.6px);
