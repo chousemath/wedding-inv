@@ -26,3 +26,10 @@ $(document).ready(function () {
     variableHeight: true
   });
 });
+
+function copyAddress() {
+  var copyText = document.getElementById('myInput');
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+}
