@@ -24,11 +24,12 @@ $(document).ready(function () {
         variableWidth: true,
         variableHeight: true,
     });
+    const mapBox = document.getElementById('section-map-box').getBoundingClientRect();
     new daum.roughmap.Lander({
     	'timestamp' : '1597127240358',
     	'key' : '2zmnf',
-    	'mapWidth' : '400',
-    	'mapHeight' : '300'
+    	'mapWidth' : mapBox.width.toString(),
+    	'mapHeight' : mapBox.height.toString()
     }).render();
 });
 function copyAddress() {
