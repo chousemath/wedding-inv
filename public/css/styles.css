@@ -1,10 +1,10 @@
 @font-face {
     font-family: GoldenPier;
-    src: url('./css/MapoGoldenPier.ttf');
+    src: url('./MapoGoldenPier.ttf');
 }
 @font-face {
     font-family: FlowerIsland;
-    src: url('./css/MapoFlowerIsland.ttf');
+    src: url('./MapoFlowerIsland.ttf');
 }
 * {
     margin: 0;
@@ -354,12 +354,12 @@ section {
     height: 2px;
     background-color: #f1cb9c;
 }
-#welcome-text-0-spacer {
+.welcome-text-0-spacer {
     display: flex;
     width: 100vw;
     height: 20px;
 }
-#welcome-text-0 {
+.welcome-text-0 {
     z-index: 11;
     flex-grow: 1;
     max-height: 180px;
@@ -415,13 +415,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 18.9px;
+    margin-right: 19px;
 }
 .welcome-text-8-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 18.2px;
+    margin-right: 19px;
 }
 #welcome-text-9 {
     z-index: 11;
@@ -558,7 +558,6 @@ section {
 #section-instructions-box {
     width: calc(100% - 2 * 22.5px);
     padding-top: 35px;
-    padding-bottom: 20px;
 }
 #section-thanks {
     width: 100vw;
