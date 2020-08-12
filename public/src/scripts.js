@@ -23,14 +23,14 @@ $(document).ready(function () {
         dots: false,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows: false,
         centerMode: true,
-        prevArrow: false,
-        nextArrow: false,
+        lazyLoad: 'ondemand',
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
         variableHeight: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
     });
     const mapBox = document.getElementById('section-map-box').getBoundingClientRect();
     for (let x of document.getElementsByClassName('map')) {

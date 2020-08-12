@@ -34,14 +34,14 @@ $(document).ready(function () {
     dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: false,
     centerMode: true,
-    prevArrow: false,
-    nextArrow: false,
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
-    variableHeight: true
+    variableHeight: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next')
   });
   var mapBox = document.getElementById('section-map-box').getBoundingClientRect();
 
