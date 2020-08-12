@@ -1,12 +1,20 @@
-//const coverCanvas = document.getElementById('cover-canvas');
-//const ctxCover = coverCanvas.getContext('2d');
-//
-//ctxCover.beginPath();
-//// context.arc(x,y,r,sAngle,eAngle,counterclockwise);
-//ctxCover.arc(2,1,1,0,2*Math.PI);
-//ctxCover.stroke();
-//ctxCover.fillStyle = 'red';
-//ctxCover.fill();
+const handleResize = () => {
+    console.log('go');
+    dark.style.display = getOrientation() === 'portrait' ? 'none' : 'flex';
+};
+
+const copyAddress = () => {
+  const copyText = document.getElementById('myInput');
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+}
+
+const getOrientation = () => window.innerWidth > window.innerHeight ? 'landscape' : 'portrait';
+
+window.onresize = function(){ handleResize() }
+
+handleResize();
 
 $(document).ready(function () {
     window.scrollTo(1, 0);
@@ -29,9 +37,5 @@ $(document).ready(function () {
         x.height = mapBox.height.toString();
     }
 });
-function copyAddress() {
-  const copyText = document.getElementById('myInput');
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  document.execCommand('copy');
-}
+
+

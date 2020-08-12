@@ -6,15 +6,27 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-//const coverCanvas = document.getElementById('cover-canvas');
-//const ctxCover = coverCanvas.getContext('2d');
-//
-//ctxCover.beginPath();
-//// context.arc(x,y,r,sAngle,eAngle,counterclockwise);
-//ctxCover.arc(2,1,1,0,2*Math.PI);
-//ctxCover.stroke();
-//ctxCover.fillStyle = 'red';
-//ctxCover.fill();
+var handleResize = function handleResize() {
+  console.log('go');
+  dark.style.display = getOrientation() === 'portrait' ? 'none' : 'flex';
+};
+
+var copyAddress = function copyAddress() {
+  var copyText = document.getElementById('myInput');
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+};
+
+var getOrientation = function getOrientation() {
+  return window.innerWidth > window.innerHeight ? 'landscape' : 'portrait';
+};
+
+window.onresize = function () {
+  handleResize();
+};
+
+handleResize();
 $(document).ready(function () {
   window.scrollTo(1, 0);
   $('.your-class').slick({
@@ -47,10 +59,3 @@ $(document).ready(function () {
     _iterator.f();
   }
 });
-
-function copyAddress() {
-  var copyText = document.getElementById('myInput');
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  document.execCommand('copy');
-}
